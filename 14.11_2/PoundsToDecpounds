@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    float pounds = 0;
+    float shillings = 0;
+    float pence = 0;
+
+    cout << "Enter Pounds: " << endl;
+    cin >> pounds;
+
+    cout << "Enter Shillings: " << endl;
+    cin >> shillings;
+
+    cout << "Enter Pence: " << endl;
+    cin >> pence;
+
+    float decpounds = ((pounds * 20 + shillings) * 12 + pence) / 240;
+
+    cout << 'J' << round(decpounds * 100) / 100 << endl;
+
+    return 0;
+}
